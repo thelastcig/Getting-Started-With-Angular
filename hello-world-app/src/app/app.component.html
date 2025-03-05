@@ -1,4 +1,10 @@
 <div>
-  <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+  <input
+  type="text"
+  [(ngModel)]="userName"
+  (input)="validateUserName()"
+  placeholder="Enter your name"
+  >
   <h1>Hello from BridgeLabz, {{ userName }}!</h1>
+  <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
 </div>
