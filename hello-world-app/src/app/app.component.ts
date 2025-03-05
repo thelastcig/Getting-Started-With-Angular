@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   logoUrl: string = 'BL_logo_square_png.png';
+
+  openBridgeLabz(){
+    window.open('https://www.bridgelabz.com', '_blank');
+  }
 }
